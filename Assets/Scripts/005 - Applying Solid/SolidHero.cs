@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class SolidHero
 {
-    float currentXP;
+    public SolidXP solidXP;
     List<int> amountOfDices;
     List<int> amountOfFaces;
 
-    public float getCurrentXP() { return currentXP; }
-
     public SolidHero()
     {
-        currentXP = 0.0f;
+        solidXP = new SolidXP();
 
         amountOfDices = new List<int>();
         amountOfDices.Add(1);
@@ -23,7 +21,7 @@ public class SolidHero
 
     public SolidHero(int dice, int face)
     {
-        currentXP = 0.0f;
+        solidXP = new SolidXP();
 
         amountOfDices = new List<int>();
         amountOfDices.Add(dice);
@@ -34,7 +32,7 @@ public class SolidHero
 
     public SolidHero(int[] dices, int[] faces)
     {
-        currentXP = 0.0f;
+        solidXP = new SolidXP();
 
         amountOfDices = new List<int>();
         for (int i = 0; i < dices.Length; i++)
@@ -48,15 +46,6 @@ public class SolidHero
         {
             amountOfFaces.Add(faces[i]);
         }
-    }
-
-    public float GainXP(float XP, float XP_multiplier)
-    {
-        if (XP < 0.0f) return currentXP;
-        if (XP_multiplier < 0.0f) XP_multiplier = 0.0f;
-
-        currentXP += XP * XP_multiplier;
-        return currentXP;
     }
 
     public List<int> CalculateMinAndMaxDamage()
