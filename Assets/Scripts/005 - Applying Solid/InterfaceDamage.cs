@@ -6,4 +6,5 @@ public interface InterfaceDamage
 {
     public List<int> CalculateMinAndMaxDamage();
 
+
 }
