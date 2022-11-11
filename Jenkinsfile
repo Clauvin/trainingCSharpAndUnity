@@ -1,6 +1,6 @@
-UNITY = '%unity%' # environment variable
-DOTNET = '%dotnet%' # environment variable
-SCANNER_HOME = '%scannerhome%' #environment variable
+UNITY = '%unity%'
+DOTNET = '%dotnet%'
+SCANNER_HOME = '%scannerhome%'
 pipeline {
 		parameters {
 			choice(name: 'build', choices: ['Release', 'Debug'], description: "Release or Debug. Debug Builds take longer")
