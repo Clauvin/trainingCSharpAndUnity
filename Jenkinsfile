@@ -1,4 +1,4 @@
-UNITY = "%%UNITY%%"
+UNITY = "%%unity%%"
 DOTNET = '%dotnet%'
 SCANNER_HOME = '%scannerhome%'
 pipeline {
