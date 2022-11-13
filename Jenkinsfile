@@ -17,7 +17,6 @@ pipeline {
 			stage ('Build') {
 			steps { script {
 				bat """
-				UNITY = '%unity%'
 				UNITY -nographics -buildTarget Win64 -quit -batchmode -projectPath . -executeMethod JenkinsBuild.CommandLineParser.parseCommandLineArgs ${build} -buildWindows64Player "${target}"
 				"""
 			}}}
