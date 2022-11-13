@@ -16,7 +16,7 @@ pipeline {
 	stages {
 			stage ('Build') {
 			steps { script {
-				bat 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/unity.exe' -nographics -buildTarget Win64 -quit -batchmode -projectPath . -executeMethod JenkinsBuild.CommandLineParser.parseCommandLineArgs ${build} -buildWindows64Player "${target}"'
+				bat ' 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/unity.exe' -nographics -buildTarget Win64 -quit -batchmode -projectPath . -executeMethod JenkinsBuild.CommandLineParser.parseCommandLineArgs ${build} -buildWindows64Player "${target}"'
 			}}}
 			stage('SonarQube') { 
 			steps { script {
