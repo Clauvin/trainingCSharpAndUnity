@@ -1,4 +1,3 @@
-UNITY = '\%unity\%'
 DOTNET = '%dotnet%'
 SCANNER_HOME = '%scannerhome%'
 pipeline {
@@ -17,7 +16,7 @@ pipeline {
 			stage ('Build') {
 			steps { script {
 				bat """
-				UNITY -nographics -buildTarget Win64 -quit -batchmode -projectPath . -executeMethod JenkinsBuild.CommandLineParser.parseCommandLineArgs ${build} -buildWindows64Player "${target}"
+				%UNITY% -nographics -buildTarget Win64 -quit -batchmode -projectPath . -executeMethod JenkinsBuild.CommandLineParser.parseCommandLineArgs ${build} -buildWindows64Player "${target}"
 				"""
 			}}}
 			stage('SonarQube') { 
