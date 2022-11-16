@@ -30,16 +30,18 @@ public class SolidBattle : InterfaceBattle
 
     void InterfaceBattle.AddHeroToTeamOne(InterfaceHero hero)
     {
-        throw new System.NotImplementedException();
+        teamOne.Add(hero);
     }
 
     void InterfaceBattle.AddHeroToTeamTwo(InterfaceHero hero)
     {
-        throw new System.NotImplementedException();
+        teamTwo.Add(hero);
     }
 
     void InterfaceBattle.DoBattleBetweenTeamsOneAndTwo()
     {
-        throw new System.NotImplementedException();
+        //teamOne members attack each one a random target of teamTwo, with printed effects
+        //if teamTwo is alive, repeat for teamTwo
+        //when one team is dead, declare the other one victorious
     }
 }
