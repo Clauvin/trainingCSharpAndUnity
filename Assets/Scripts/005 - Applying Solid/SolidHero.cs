@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SolidHero
+public class SolidHero: InterfaceHero
 {
     SolidXP solidXP;
     SolidHP solidHP;
@@ -43,17 +43,17 @@ public class SolidHero
         solidDamage = new SolidDamage(dices, faces);
     }
 
-    public SolidXP GetSolidXP()
+    public InterfaceXP GetSolidXP()
     {
         return solidXP;
     }
 
-    public SolidHP GetSolidHP()
+    public InterfaceHP GetSolidHP()
     {
         return solidHP;
     }
 
-    public SolidDamage GetSolidDamage()
+    public InterfaceDamage GetSolidDamage()
     {
         return solidDamage;
     }

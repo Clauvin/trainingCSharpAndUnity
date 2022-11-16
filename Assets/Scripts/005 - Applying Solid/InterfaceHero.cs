@@ -4,10 +4,10 @@ using UnityEngine;
 
 public interface InterfaceHero
 {
-    public SolidXP GetSolidXP();
+    public InterfaceXP GetSolidXP();
 
-    public SolidHP GetSolidHP();
+    public InterfaceHP GetSolidHP();
 
-    public SolidDamage GetSolidDamage();
+    public InterfaceDamage GetSolidDamage();
 
 }
