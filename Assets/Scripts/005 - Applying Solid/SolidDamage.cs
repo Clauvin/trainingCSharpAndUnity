@@ -59,4 +59,19 @@ public class SolidDamage : InterfaceDamage
 
         return minAndMaxDamage;
     }
+
+    public int RollDamage()
+    {
+        int damage = 0;
+
+        for (int i = 0; i < amountOfDices.Count; i++)
+        {
+            for (int j = 0; j < amountOfDices[i]; j++)
+            {
+                damage += Random.Range(1, amountOfFaces[i]);
+            }
+        }
+
+        return damage;
+    }
 }
