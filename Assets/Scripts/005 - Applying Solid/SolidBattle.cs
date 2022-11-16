@@ -40,6 +40,24 @@ public class SolidBattle : InterfaceBattle
 
     public void DoBattleBetweenTeamsOneAndTwo()
     {
+        if ((teamOne.Count == 0) && (teamTwo.Count == 0))
+        {
+            Debug.Log("Draw - both teams have no characters!");
+        }
+        else
+        {
+            if (teamOne.Count == 0)
+            {
+                Debug.Log("Team two wins... by default.");
+            }
+            else if (teamTwo.Count == 0)
+            {
+                Debug.Log("Team one wins... by default.");
+            }
+        }
+
+
+
         //teamOne members attack each one a random target of teamTwo, with printed effects
         //if teamTwo is alive, repeat for teamTwo
         //when one team is dead, declare the other one victorious
