@@ -28,17 +28,17 @@ public class SolidBattle : InterfaceBattle
         this.teamTwo = teamTwo;
     }
 
-    void InterfaceBattle.AddHeroToTeamOne(InterfaceHero hero)
+    void AddHeroToTeamOne(InterfaceHero hero)
     {
         teamOne.Add(hero);
     }
 
-    void InterfaceBattle.AddHeroToTeamTwo(InterfaceHero hero)
+    void AddHeroToTeamTwo(InterfaceHero hero)
     {
         teamTwo.Add(hero);
     }
 
-    void InterfaceBattle.DoBattleBetweenTeamsOneAndTwo()
+    void DoBattleBetweenTeamsOneAndTwo()
     {
         //teamOne members attack each one a random target of teamTwo, with printed effects
         //if teamTwo is alive, repeat for teamTwo
