@@ -9,5 +9,8 @@ public interface InterfaceBattle
 
     public void DoBattleBetweenTeamsOneAndTwo();
 
+    bool IsTeamOneStillStanding();
+    bool IsTeamTwoStillStanding();
+
 
 }
