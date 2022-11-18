@@ -18,18 +18,5 @@ pipeline {
 			steps { script {
 				bat ' "C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/unity.exe" -nographics -buildTarget Win64 -quit -batchmode -projectPath'
 			}}}
-			stage('SonarQube') { 
-			steps { script {
-				def scannerHome = "${SCANNER_HOME}"
-				withSonarQubeEnv('SonarQubeScanner') { script {
-				  bat """
-					set /p login_token=<C:\\.env
-					\"${DOTNET_PATH}\" ${scannerHome}\\SonarScanner.MSBuild.dll begin /key:MyGame /d:sonar.login=%login_token%
-					\"${DOTNET_PATH}\" build  My
-	Game.sln
-					\"${DOTNET_PATH}\" ${scannerHome}\\SonarScanner.MSBuild.dll end /d:sonar.login=%login_token%
-				  """
-				}}}
-			}}
 	} // end stages
 }
