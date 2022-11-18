@@ -16,7 +16,7 @@ pipeline {
 	stages {
 			stage ('Build') {
 			steps { script {
-				bat ' "C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/unity.exe" -nographics -buildTarget Win64 -quit -batchmode -projectPath
+				bat ' "C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/unity.exe" -nographics -buildTarget Win64 -quit -batchmode -projectPath'
 			}}}
 			stage('SonarQube') { 
 			steps { script {
