@@ -21,7 +21,7 @@ pipeline {
 			stage('SonarQube') { 
 			steps { script {
 				def scannerHome = "${SCANNER_HOME}"
-				withEnv("sonarqube") { script {
+				withEnv('sonarqube') { script {
 				  bat """
 					set /p login_token=<C:\\.env
 					\"${DOTNET_PATH}\" ${scannerHome}\\SonarScanner.MSBuild.dll begin /key:MyGame /d:sonar.login=%login_token%
