@@ -4,6 +4,11 @@ using UnityEngine;
 
 public interface InterfaceHP
 {
+
+    public int GetHP();
+
+    public int GetMaxHP();
+
     public void HealDamage(int amount);
 
     public void TakeDamage(int amount);
@@ -14,5 +19,6 @@ public interface InterfaceHP
 }
 
 ///Change Log
-///(Current Version) v1.1 - Added GetHP() function
+///(Current Version) v1.2 - Added GetMaxHP() function
+/// v1.1 - Added GetHP() function
 ///
