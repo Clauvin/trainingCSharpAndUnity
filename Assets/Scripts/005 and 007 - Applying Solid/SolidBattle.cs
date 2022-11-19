@@ -58,6 +58,9 @@ public class SolidBattle : InterfaceBattle
 
         do
         {
+            Debug.Log("Team one, member 0, HP = " + teamOne[0].GetSolidHP().GetHP() + " / " + teamOne[0].GetSolidHP().GetMaxHP());
+            Debug.Log("Team two, member 0, HP = " + teamTwo[0].GetSolidHP().GetHP() + " / " + teamTwo[0].GetSolidHP().GetMaxHP());
+
             //Yeah, I know, it won't work with teams of more than one.
             int damageApplied = teamOne[0].GetSolidDamage().RollDamage();
 
