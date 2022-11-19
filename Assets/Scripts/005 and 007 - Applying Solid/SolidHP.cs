@@ -22,6 +22,16 @@ public class SolidHP : InterfaceHP
         currentHP = maxHP = HP;
     }
 
+    public int GetHP()
+    {
+        return currentHP;
+    }
+
+    public int GetMaxHP()
+    {
+        return maxHP;
+    }
+
     public void HealDamage(int healAmount)
     {
         if (healAmount < 0) healAmount = 0;
@@ -52,3 +62,9 @@ public class SolidHP : InterfaceHP
         return currentHP > maxHP;
     }
 }
+
+///Change Log
+///(Current Version) v1.1 - Added code to getHp and getMaxHP.
+///
+
+
