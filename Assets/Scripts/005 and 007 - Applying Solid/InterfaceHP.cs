@@ -10,5 +10,9 @@ public interface InterfaceHP
 
     public bool IsDead();
 
-
+    
 }
+
+///Change Log
+///(Current Version) v1.1 - Added GetHP() function
+///
