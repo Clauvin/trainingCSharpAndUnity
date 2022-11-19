@@ -63,11 +63,15 @@ public class SolidBattle : InterfaceBattle
 
             teamTwo[0].GetSolidHP().TakeDamage(damageApplied);
 
+            Debug.Log("Team two, member 0 takes " + damageApplied.ToString() + " of damage from team one, member 0.");
+
             if (IsTeamTwoStillStanding())
             {
                 damageApplied = teamTwo[0].GetSolidDamage().RollDamage();
 
                 teamOne[0].GetSolidHP().TakeDamage(damageApplied);
+
+                Debug.Log("Team one, member 0 takes " + damageApplied.ToString() + " of damage from team two, member 0.");
             }
             else break;
         } 
@@ -119,3 +123,8 @@ public class SolidBattle : InterfaceBattle
         }
     }
 }
+
+///Change Log
+///(Current Version) v1.1 - Made DoBattleBetweenTeamsOneAndTwo() more verbose
+///
+
