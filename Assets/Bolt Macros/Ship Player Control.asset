@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Ship Player Control
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-980.0,"y":-566.5},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-1168.0,"y":-760.0},"guid":"e92ed324-6432-4302-a2e0-74b01c94796b","$version":"A","$type":"Bolt.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-1168.0,"y":-556.0},"guid":"1c680458-5349-46e0-b1ce-f8ba43fa2eab","$version":"A","$type":"Bolt.Update","$id":"11"},{"defaultValues":{},"position":{"x":-888.0,"y":-559.0},"guid":"6991283a-761e-4277-80a3-2267283d3713","$version":"A","$type":"Bolt.Branch","$id":"13"},{"member":{"name":"anyKey","parameterTypes":null,"targetType":"UnityEngine.Input","targetTypeName":"UnityEngine.Input","$version":"A"},"defaultValues":{},"position":{"x":-1043.0,"y":-451.0},"guid":"ea1127c5-d49e-410f-83ac-77e22226ecbb","$version":"A","$type":"Bolt.GetMember","$id":"15"},{"outputCount":6,"defaultValues":{},"position":{"x":-714.0,"y":-714.0},"guid":"75d66ac0-fae7-457d-9011-f6a29aa8fd78","$version":"A","$type":"Bolt.Sequence","$id":"18"},{"sourceUnit":{"$ref":"11"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"b19d0213-5b41-4a53-8d39-98b9e1a9a03e","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"18"},"destinationKey":"enter","guid":"62e27ba2-fc77-44d6-ba37-cf7227a54dec","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"value","destinationUnit":{"$ref":"13"},"destinationKey":"condition","guid":"43af324a-ab5f-4a47-9c52-171c131974b1","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
