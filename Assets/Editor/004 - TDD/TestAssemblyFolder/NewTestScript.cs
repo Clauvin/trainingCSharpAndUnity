@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 
-public class NewTestScript
+public class BlockPlacerTests
 {
     [OneTimeSetUp]
     public void NewTestSetUp()
